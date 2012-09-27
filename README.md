@@ -1,5 +1,9 @@
 # BOSH Release for serverdensity
 
+NOTE: this was an initial spike of a BOSH release to see if Server Density could be supported.
+
+Ultimately, to support all the plugins that come along, each will need to be included in this BOSH release and enabled for a user/server via the deployment manifest.
+
 ## Release to your BOSH
 
 To create and upload this release to your BOSH:
