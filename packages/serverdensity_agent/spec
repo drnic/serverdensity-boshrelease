@@ -1,0 +1,6 @@
+---
+name: serverdensity_agent
+dependencies:
+- python27
+files:
+- serverdensity_agent/sd-agent.tar.gz

@@ -1,0 +1,5 @@
+check process serverdensity_agent
+  with pidfile /var/vcap/sys/run/serverdensity_agent/serverdensity_agent.pid
+  start program "/var/vcap/jobs/serverdensity_agent/bin/monit_debugger serverdensity_agent_ctl '/var/vcap/jobs/serverdensity_agent/bin/serverdensity_agent_ctl start'"
+  stop program "/var/vcap/jobs/serverdensity_agent/bin/monit_debugger serverdensity_agent_ctl '/var/vcap/jobs/serverdensity_agent/bin/serverdensity_agent_ctl stop'"
+  group vcap

@@ -1,0 +1,19 @@
+---
+name: serverdensity_agent
+packages:
+- serverdensity_agent
+- python27
+templates:
+  bin/serverdensity_agent_ctl: bin/serverdensity_agent_ctl
+  bin/monit_debugger: bin/monit_debugger
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  config/agent.cfg.erb: config/agent.cfg
+properties:
+  serverdensity.subdomain:
+    default: example
+    description: Your NAME.serverdensity.com subdomain
+  serverdensity.agent_key:
+    default: AGENT_KEY
+    description: Your serverdensity.com secret key
